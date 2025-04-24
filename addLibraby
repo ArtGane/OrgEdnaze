@@ -1,0 +1,12 @@
+import os
+import subprocess
+
+def install_dependencies():
+    try:
+        subprocess.check_call(['pip', 'install', 'Pillow', 'imagehash'])
+        print("Dépendances installées avec succès.")
+    except Exception as e:
+        print(f"Erreur lors de l'installation des dépendances : {e}")
+
+if __name__ == "__main__":
+    install_dependencies()
