@@ -36,3 +36,4 @@ for folder in folders:
 
 # Supprimer le dossier vide
 os.rmdir(folder)
+
